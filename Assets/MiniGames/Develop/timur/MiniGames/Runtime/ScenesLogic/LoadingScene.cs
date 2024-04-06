@@ -1,11 +1,12 @@
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour
 {
-    [SerializeField] private SceneAsset _scene;
+    [SerializeField] private int _sceneId;
     public void LoadScene()
     {
-        Scene.LoadScene(_scene.name);
+        Time.timeScale = 1;
+        SceneManager.LoadScene( _sceneId );
     }
 }

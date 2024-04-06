@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -12,9 +11,9 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI bestScoreText;
     public TextMeshProUGUI startText;
 
-    int currentScore;
+    public int currentScore;
 
-    void Start()
+    public void Start()
     {
         currentScore = 0;
         bestScoreText.text = PlayerPrefs.GetInt("WaveMasterRecord", 0).ToString();

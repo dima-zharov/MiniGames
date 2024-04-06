@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class playerSpawning : MonoBehaviour
 {  
-    void Start()
+    private void Start()
+    {
+        SpawnDino();
+    }
+
+    private void SpawnDino()
     {
         Vector3 leftBottomCorner = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0));
 
@@ -11,7 +16,7 @@ public class playerSpawning : MonoBehaviour
 
         newPos.x = leftBottomCorner.x + playerWidth;
         transform.position = newPos;
-        
+
         transform.position = new Vector2(transform.position.x + 1, transform.position.y);
     }
 }

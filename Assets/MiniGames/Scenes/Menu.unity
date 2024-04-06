@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041B\u0435\u0442\u0430\u044E\u0449\u0430\u044F \u043F\u0442\u0438\u0446\u0430"
+  m_text: "\u041F\u0442\u0438\u0447\u043A\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f86b5331fde77d14da3444b924ff6708, type: 2}
   m_sharedMaterial: {fileID: -8148088234344383923, guid: f86b5331fde77d14da3444b924ff6708, type: 2}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 98.85
+  m_fontSize: 100
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 88
+  m_fontSize: 81.3
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323995c277f97184cbb4e823ce09631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: {fileID: 102900000, guid: daba01288cfc59342b36de2b332ae5c3, type: 3}
+  _sceneId: 1
 --- !u!1 &196173857
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323995c277f97184cbb4e823ce09631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+  _sceneId: 4
 --- !u!1 &367599386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,7 +1142,6 @@ GameObject:
   - component: {fileID: 377366635}
   - component: {fileID: 377366636}
   - component: {fileID: 377366637}
-  - component: {fileID: 377366638}
   m_Layer: 0
   m_Name: UserInformation
   m_TagString: Untagged
@@ -1195,21 +1194,6 @@ MonoBehaviour:
   _bestScoreMemoryText: {fileID: 814250576}
   _bestScoreMathQuestText: {fileID: 1802673812}
   _bestScoreWaveMasterText: {fileID: 1396863740}
---- !u!114 &377366638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377366633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4de242c31f236d4e8666300e4bfb18f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerName: {fileID: 0}
-  _playerNameOptions: {fileID: 0}
-  _inputField: {fileID: 0}
 --- !u!1 &388288395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1537,7 @@ Transform:
   m_GameObject: {fileID: 411145335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 523.1834, y: 1311.6248, z: 19424.674}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1657,7 +1641,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
+  m_fontSize: 87.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1853,7 +1837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323995c277f97184cbb4e823ce09631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: {fileID: 102900000, guid: 7d99206c4c633194c873bfb69cdbebe5, type: 3}
+  _sceneId: 5
 --- !u!1 &693568222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,7 +1928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &709681533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2050,7 +2034,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 138.2
+  m_fontSize: 127.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2184,7 +2168,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
+  m_fontSize: 87.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2931,7 +2915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323995c277f97184cbb4e823ce09631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: {fileID: 102900000, guid: a5206f1c1009a47538bd746dbb2fa19e, type: 3}
+  _sceneId: 2
 --- !u!1 &1056353964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,7 +3001,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 92.9
+  m_fontSize: 81.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3472,7 +3456,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
+  m_fontSize: 87.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3606,7 +3590,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
+  m_fontSize: 87.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3908,7 +3892,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.6
+  m_fontSize: 58.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4178,7 +4162,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 96.7
+  m_fontSize: 86.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4411,7 +4395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323995c277f97184cbb4e823ce09631f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene: {fileID: 102900000, guid: 1931f6e45aa225640bec8fc657d95e5f, type: 3}
+  _sceneId: 3
 --- !u!1 &1643702277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041B\u0435\u0442\u0430\u044E\u0449\u0430\u044F \u043F\u0442\u0438\u0446\u0430\n"
+  m_text: "\u041F\u0442\u0438\u0447\u043A\u0430\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e204fd8be42fcb448f354e539344623, type: 2}
   m_sharedMaterial: {fileID: 8474401656394357073, guid: 8e204fd8be42fcb448f354e539344623, type: 2}
@@ -4781,7 +4765,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90.75
+  m_fontSize: 100
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4915,7 +4899,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 95.5
+  m_fontSize: 87.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5083,7 +5067,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 93.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5467,7 +5451,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 98.75
+  m_fontSize: 91.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

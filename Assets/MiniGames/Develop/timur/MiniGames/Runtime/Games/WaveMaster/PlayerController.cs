@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,11 +40,10 @@ public class PlayerController : MonoBehaviour
         if (isDead == true) return;
 
 
-        Vector3 newPos = startPos;
-        newPos.x += delta * Mathf.Sin(Time.time * lrSpeed);
-        transform.position = new Vector3(newPos.x, transform.position.y, transform.position.z);
 
-        if(Input.GetMouseButton(0))
+        transform.position = new Vector3(ReturnNewPosX(startPos.x, delta, Time.time, lrSpeed), transform.position.y, transform.position.z);
+
+        if (Input.GetMouseButton(0))
         {
             isBoosted = true;
             rb.AddForce(transform.up * upSpeed);
@@ -57,13 +54,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Audio delay fix
+
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Obstacle")
         {
             SoundManager.instance.PlaySingle(deathSound);
-            // SoundManager.instance.musicSource.Stop(); // Stops the music
             Death();
         }
         else if (other.gameObject.tag == "Collectible")
@@ -71,6 +69,11 @@ public class PlayerController : MonoBehaviour
             SoundManager.instance.PlaySingle(itemSound);
             GetItem(other);
         }
+    }
+
+    public float ReturnNewPosX(float x, float delta, float time, float lrSpeed)
+    {
+        return x + delta * Mathf.Sin(time * lrSpeed);
     }
 
     void GetItem(Collider other)

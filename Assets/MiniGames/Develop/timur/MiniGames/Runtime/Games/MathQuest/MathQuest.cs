@@ -97,6 +97,8 @@ public class MathQuest : MonoBehaviour
             else
             {
                 ResetTimer();
+                if (timeRe <= 5)
+                    StopTimer();
                 GenerateExample();
             }
         }
@@ -164,8 +166,6 @@ public class MathQuest : MonoBehaviour
         isTime = true;
         if(timeDown > 5)
             timeDown = timeDown - 5;
-        else if(timeDown <= 5)
-            StopTimer();
         UpdateTimer();
     }
     
